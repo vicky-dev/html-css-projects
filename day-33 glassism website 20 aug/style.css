@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    position: relative;
+    width: 330px;
+}
+.container .menu-btn{
+    position: absolute;
+    top: 20px;
+    left: 247px;
+    height: 45px;
+    width: 45px;
+    z-index: 999;
+    color: #f2f2f2;
+    background: #4a4a4a;
+    
+}
+.container .sidebar{
+    position: fixed;
+    height: 100%;
+    width: 270px;
+    background: #404040;
+    overflow: hidden;
+}
+.sidebar .title{
+    color: #f2f2f2;
+    background: #333;
+    font: size 25px ;
+    line-height: 65px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.sidebar ul{
+    position: relative;
+    background: #404040;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+.sidebar ul li{
+    padding-left: 40px;
+    line-height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #333;
+    transition: all 0.3s ease;
+}
+.sidebar ul li:hover{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 0px 10px 3px #222;
+}
+
+.sidebar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.sidebar li a i {
+    margin-right: 20px;
+}
+ul .SM-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    
+    bottom: 100px;
+}
+ul .SM-icons a{
+    background: #4a4a4a;
+    margin:0 5px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: #f2f2f2;
+    border: 1px solid #383838;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+ul .SM-icons a:hover{
+    background: #404040;
+}
+ul .SM-icons a i{
+    color: #fff;
+}
